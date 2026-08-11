@@ -1,51 +1,23 @@
 # Jogo da Velha em Java
 
-Jogo da velha com interface gráfica, histórico de jogadas e ranking persistido em banco de dados.
+Este é um jogo da velha que fiz em Java usando o NetBeans.
 
-## Recursos
+O jogo tem interface gráfica feita com Swing, dois jogadores, cronômetro, histórico das jogadas e ranking salvo no banco de dados.
 
-- Interface gráfica construída com Java Swing
-- Partidas para dois jogadores
-- Validação das jogadas e identificação do vencedor
-- Cronômetro de partida
-- Histórico de jogadas
-- Jogadores comuns e VIP
-- Persistência de partidas e ranking com JDBC
+Durante o projeto usei alguns conteúdos que estava aprendendo, como orientação a objetos, herança, interfaces, listas e conexão com banco de dados usando JDBC.
 
-## Estrutura
+## Organização do código
 
 ```text
 src/
-├── app/          # inicialização da aplicação
-├── config/       # configuração global
-├── dao/          # conexão e operações no banco
-├── interfaces/   # contratos compartilhados
-├── model/        # jogadores, jogadas e tabuleiro
-├── service/      # regras do jogo e cronômetro
-└── view/         # interface Swing
+├── app/
+├── config/
+├── dao/
+├── interfaces/
+├── model/
+├── service/
+└── view/
 ```
 
-## Tecnologias
-
-- Java
-- Java Swing
-- JDBC
-- Apache Ant e NetBeans
-
-## Como executar
-
-1. Instale um JDK e configure o projeto no NetBeans.
-2. Prepare um banco de dados compatível com as consultas presentes em `RankingDao`.
-3. Confira as configurações locais em `ConfiguracaoGlobal`.
-4. Adicione o driver JDBC necessário ao projeto.
-5. Execute `app.Main`.
-
-> Não publique senhas reais nas configurações do banco de dados.
-
-## Próximas melhorias
-
-- Adicionar testes automatizados para as regras do tabuleiro
-- Incluir um script documentado para criação das tabelas
-- Criar uma configuração externa para o banco de dados
-- Adicionar imagens da interface ao README
+Para executar o projeto é necessário ter o Java instalado, adicionar o driver do MySQL ao projeto e configurar o banco de dados.
 
