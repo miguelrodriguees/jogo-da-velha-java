@@ -10,8 +10,6 @@ Durante o desenvolvimento pratiquei conteúdos como:
 - herança e interfaces;
 - listas e organização em camadas;
 - JDBC para conexão com MySQL;
-- criação de tabelas, chaves primárias e estrangeiras;
-- relacionamento entre jogadores, partidas e jogadas.
 
 ## Organização do projeto
 
