@@ -1,12 +1,19 @@
 # Jogo da Velha em Java
 
-Este é um jogo da velha que fiz em Java usando o NetBeans.
+Projeto desenvolvido em Java no NetBeans durante meus estudos de programação.
 
-O jogo tem interface gráfica feita com Swing, dois jogadores, cronômetro, histórico das jogadas e ranking salvo no banco de dados.
+O jogo possui interface gráfica com Swing, dois jogadores, cronômetro, histórico de jogadas e ranking salvo em banco de dados MySQL.
 
-Durante o projeto usei alguns conteúdos que estava aprendendo, como orientação a objetos, herança, interfaces, listas e conexão com banco de dados usando JDBC.
+Durante o desenvolvimento pratiquei conteúdos como:
 
-## Organização do código
+- orientação a objetos;
+- herança e interfaces;
+- listas e organização em camadas;
+- JDBC para conexão com MySQL;
+- criação de tabelas, chaves primárias e estrangeiras;
+- relacionamento entre jogadores, partidas e jogadas.
+
+## Organização do projeto
 
 ```text
 src/
@@ -17,7 +24,29 @@ src/
 ├── model/
 ├── service/
 └── view/
+
+database/
+└── schema.sql
 ```
 
-Para executar o projeto é necessário ter o Java instalado, adicionar o driver do MySQL ao projeto e configurar o banco de dados.
+## Banco de dados
 
+O arquivo `database/schema.sql` contém a estrutura utilizada pelo projeto.
+
+O banco possui três tabelas principais:
+
+```text
+JOGADORES
+    ↓
+PARTIDAS
+    ↓
+JOGADAS
+```
+
+- `jogadores`: armazena os jogadores cadastrados;
+- `partidas`: registra o resultado, pontuação, quantidade de jogadas e tempo da partida;
+- `jogadas`: guarda o histórico de cada movimento realizado durante uma partida.
+
+Para executar o projeto é necessário ter o Java instalado, adicionar o MySQL Connector/J ao projeto e configurar a conexão com o banco de dados.
+
+Este repositório também faz parte do meu processo de aprendizagem em Java e MySQL.
